@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: test-ingress
+spec:
+  rules:
+  - ##host: ec2-3-92-56-58.compute-1.amazonaws.com
+    http:
+      paths:
+      - backend:
+          serviceName: hello-service
+          servicePort: 80

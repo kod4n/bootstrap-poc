@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+
+!example
+!example/**/*
+
+!cloudformation
+!cloudformation/**/*
+
+!*.sh
+!cf.yaml
+
+!Dockerfile
+!README.md
