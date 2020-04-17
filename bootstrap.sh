@@ -60,8 +60,9 @@ echo "using rke version: $(rke --version)"
 rke up &
 
 iter=0
-while [ $iter -le 5 ]
+while [ $iter -le 11 ]
 do
-	ec2InstanceConnect
 	sleep 55
+	ec2InstanceConnect
+	iter=$(( $iter + 1 ))
 done
